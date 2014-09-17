@@ -9,4 +9,5 @@ clean:
 	rm ${OUTPUT}
 
 install: all
-	cp ${OUTPUT} /usr/local/bin/
+	mkdir -p /usr/local/bin && cp ${OUTPUT} /usr/local/bin
+
